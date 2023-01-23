@@ -26,7 +26,7 @@ body{
     flex-direction: column;
     align-items: center;
     align-content: center;
-
+    border: 2px black solid;
 }
 
 .header{
@@ -108,6 +108,15 @@ img{
     align-content: center;
 }
 
-.signature{
-    width: 300px;
+.signature_field p{
+    text-decoration: none;
+    text-align: right;
+    font-family: Harukaze;
+    font-size: 40px;
 }
+
+.signature{
+    height: 64px;
+    /*border: 1px black solid;*/
+}
+
