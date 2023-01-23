@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+.inside{
+    background-image: url("../img/background.png"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 1200px;/* You must set a specified height */
+    /*width: 100%;*/
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    height: 300px;
+    width: 100%;
+}
+
+.header img{
+    height: 300px;
+}
