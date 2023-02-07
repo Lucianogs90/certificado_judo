@@ -1,155 +1,158 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: Harukaze;
-    src: local(Harukaze), url("../fonts/Harukaze.ttf");
+  font-family: Harukaze;
+  src: local(Harukaze), url("../fonts/Harukaze.ttf");
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-gap: 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-gap: 0;
 
+ 
 
-    /* background-color: aqua; */
+  /* background-color: aqua; */
 
-    background-image: url("../img/background.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    
-    border: 15px double black;
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+
+  border: 15px double black;
+
+  margin: 7vh 1vw;
 }
 
 .header {
-    grid-area: "header";
-    grid-column: 1/4;
-    grid-row: 1/2;
+  grid-area: "header";
+  grid-column: 1/4;
+  grid-row: 1/2;
 
-    /* background-color: blue; */
-    height: 20vh;
+  /* background-color: blue; */
+  height: 20vh;
 
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
-.header>img {
-    height: 20vh;
-    padding: 10px;
+.header > img {
+  height: 20vh;
+  padding: 10px;
 }
 
 .kanji {
-    grid-area: "kanji";
-    grid-column: 1/2;
-    grid-row: 2/5;
+  grid-area: "kanji";
+  grid-column: 1/2;
+  grid-row: 2/5;
 
-    /* background-color: green; */
-    height: 40vh;
+  /* background-color: green; */
+  height: 40vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.kanji>p {
-    text-align: center;
-    color: black;
-    font-size: 72px;
-    font-weight: bolder;
+.kanji > p {
+  text-align: center;
+  color: black;
+  font-size: 72px;
+  font-weight: bolder;
 
-    padding: 10px;
+  padding: 10px;
 }
 
 .title {
-    grid-area: "title";
-    grid-column: 2/4;
-    grid-row: 2/3;
+  grid-area: "title";
+  grid-column: 2/4;
+  grid-row: 2/3;
 
-    /* background-color: orange; */
-    height: 10vh;
+  /* background-color: orange; */
+  height: 10vh;
 }
 
-.title>h1{
-    font-family: Harukaze;
-    text-align: center;
-    font-size: 48px;
-    letter-spacing: 10px;
+.title > h1 {
+  font-family: Harukaze;
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: 10px;
 
-    padding: 10px;
+  padding: 10px;
 }
 
 .content {
-    grid-area: "content";
-    grid-column: 2/4;
-    grid-row: 3/4;
+  grid-area: "content";
+  grid-column: 2/4;
+  grid-row: 3/4;
 
-    /* background-color: red; */
-    height: 20vh;
+  /* background-color: red; */
+  height: 20vh;
 }
 
-.content>p{
-    font-family: Harukaze;
-    text-align: justify;
-    font-size: 32px;
-    letter-spacing: 5px;
+.content > p {
+  font-family: Harukaze;
+  text-align: justify;
+  font-size: 32px;
+  letter-spacing: 5px;
 
-    padding: 10px;
+  padding: 10px;
 }
 
 .date {
-    grid-area: "date";
-    grid-column: 2/4;
-    grid-row: 4/5;
+  grid-area: "date";
+  grid-column: 2/4;
+  grid-row: 4/5;
 
-    /* background-color: purple; */
-    height: 10vh;
+  /* background-color: purple; */
+  height: 10vh;
 }
 
-.date>p{
-    font-family: Harukaze;
-    text-align: right;
-    font-size: 32px;
-    letter-spacing: 5px;
+.date > p {
+  font-family: Harukaze;
+  text-align: right;
+  font-size: 32px;
+  letter-spacing: 5px;
 
-    padding: 10px;
+  padding: 10px;
 }
 
 .signature {
-    grid-area: "signature";
-    grid-column: 1/4;
-    grid-row: 5/6;
+  grid-area: "signature";
+  grid-column: 1/4;
+  grid-row: 5/6;
 
-    /* background-color: aliceblue; */
-    height: 10vh;
+  /* background-color: aliceblue; */
+  height: 10vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.signature>img{
-    height: 5vh;
+.signature > img {
+  height: 5vh;
 }
 
 .belt {
-    grid-area: "belt";
-    grid-column: 1/4;
-    grid-row: 7/8;
- 
-    /* background-color: aqua; */
-    height: 10vh;
+  grid-area: "belt";
+  grid-column: 1/4;
+  grid-row: 7/8;
+
+  /* background-color: aqua; */
+  height: 10vh;
 }
 
-.belt p{
-    display: block;
-    background-color: purple;
-    padding: 10px;
-    margin-top: 10px;
+.belt p {
+  display: block;
+  background-color: purple;
+  padding: 10px;
+  margin-top: 10px;
 }
