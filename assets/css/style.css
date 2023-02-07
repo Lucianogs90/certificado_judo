@@ -1,11 +1,7 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-}
-
-body{
-    width: 100%;
 }
 
 @font-face {
@@ -13,111 +9,126 @@ body{
     src: local(Harukaze), url("../fonts/Harukaze.ttf");
 }
 
-.inside{
-    background-image: url("../img/background.png"); /* The image used */
-    /*background-color: #cccccc; /* Used if the image is unavailable */
-    height: 1200px;/* You must set a specified height */
-    width: 98%;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-gap: 0;
+
+
+    background-color: aqua;
+    /*width: 100vw;
+    height: 100vh;*/
+}
+
+.header {
+    grid-area: "header";
+    grid-column: 1/4;
+    grid-row: 1/2;
+
+    background-color: blue;
+    height: 20vh;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.header>img {
+    height: 20vh;
+}
+
+.kanji {
+    grid-area: "kanji";
+    grid-column: 1/2;
+    grid-row: 2/5;
+
+    background-color: green;
+    height: 30vh;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-content: center;
-    border: 2px black solid;
-}
-
-.header{
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
-    align-items: center;
-    height: 300px;
-    /*border: 1px black solid;*/
-}
-
-
-img{
-    height: 300px;
-    opacity: 0.45;
-}
-
-.img{
-    display: flex;
     justify-content: center;
-    height: 300px;
-    width: 300px;
-    margin: 0px 120px;
-}
-
-.text{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    align-content: space-between;
 }
 
-.kanji{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
-}
-
-.kanji p{
+.kanji>p {
     text-align: center;
-    font-size: 240px;
+    color: black;
+    font-size: 72px;
+    font-weight: bolder;
 }
 
-.certificate{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+.title {
+    grid-area: "title";
+    grid-column: 2/4;
+    grid-row: 2/3;
+
+    background-color: orange;
+    height: 10vh;
 }
 
-.title{
-    text-decoration: none;
-    text-align: center;
+.title>h1{
     font-family: Harukaze;
-    font-size: 120px;
-    font-weight: 600;
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 10px;
 }
 
-.certification{
-    text-decoration: none;
+.content {
+    grid-area: "content";
+    grid-column: 2/4;
+    grid-row: 3/4;
+
+    background-color: red;
+    height: 10vh;
+}
+
+.content>p{
+    font-family: Harukaze;
     text-align: justify;
-    font-family: Harukaze;
-    font-size: 64px;
+    font-size: 32px;
+    letter-spacing: 5px;
 }
 
-.date{
-    text-decoration: none;
+.date {
+    grid-area: "date";
+    grid-column: 2/4;
+    grid-row: 4/5;
+
+    background-color: purple;
+    height: 10vh;
+}
+
+.date>p{
+    font-family: Harukaze;
     text-align: right;
-    font-family: Harukaze;
-    font-size: 56px;
+    font-size: 32px;
+    letter-spacing: 5px;
 }
 
-.signature_field{
+.signature {
+    grid-area: "signature";
+    grid-column: 1/4;
+    grid-row: 5/6;
+
+    background-color: aliceblue;
+    height: 10vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
 }
 
-.signature_field p{
-    text-decoration: none;
-    text-align: right;
-    font-family: Harukaze;
-    font-size: 40px;
+.signature>img{
+    height: 5vh;
 }
 
-.signature{
-    height: 64px;
-    /*border: 1px black solid;*/
+.belt {
+    grid-area: "belt";
+    grid-column: 1/4;
+    grid-row: 7/8;
+ 
+    background-color: aqua;
+    height: 10vh;
 }
-

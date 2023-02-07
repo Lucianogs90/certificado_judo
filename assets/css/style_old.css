@@ -1,0 +1,123 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+@font-face {
+    font-family: Harukaze;
+    src: local(Harukaze), url("../fonts/Harukaze.ttf");
+}
+
+.inside{
+    background-image: url("../img/background.png"); /* The image used */
+    /*background-color: #cccccc; /* Used if the image is unavailable */
+    height: 1200px;/* You must set a specified height */
+    width: 98%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border: 2px black solid;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    height: 300px;
+    /*border: 1px black solid;*/
+}
+
+
+img{
+    height: 300px;
+    opacity: 0.45;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    margin: 0px 120px;
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+
+.kanji{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.kanji p{
+    text-align: center;
+    font-size: 240px;
+}
+
+.certificate{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.title{
+    text-decoration: none;
+    text-align: center;
+    font-family: Harukaze;
+    font-size: 120px;
+    font-weight: 600;
+}
+
+.certification{
+    text-decoration: none;
+    text-align: justify;
+    font-family: Harukaze;
+    font-size: 64px;
+}
+
+.date{
+    text-decoration: none;
+    text-align: right;
+    font-family: Harukaze;
+    font-size: 56px;
+}
+
+.signature_field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.signature_field p{
+    text-decoration: none;
+    text-align: right;
+    font-family: Harukaze;
+    font-size: 40px;
+}
+
+.signature{
+    height: 64px;
+    /*border: 1px black solid;*/
+}
+
